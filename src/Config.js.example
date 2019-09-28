@@ -1,0 +1,11 @@
+export const path = {
+  api: 'https://api.server.com/path/to/api/',
+  home: '/',
+}
+
+export const auth = {
+  login: 'https://auth.server.com/login',
+  logout: 'https://auth.server.com/logout',
+  user: 'https://api.server.com/path/to/user',
+}
+
