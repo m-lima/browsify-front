@@ -1,4 +1,4 @@
-FROM node
+FROM node as web
 
 WORKDIR /web
 
@@ -10,3 +10,7 @@ COPY . /web
 
 # Build
 RUN npm run build
+
+# Pack
+FROM alpine
+COPY --from=web /web/build /web/build
