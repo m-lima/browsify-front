@@ -3,4 +3,4 @@ docker run \
   --volume browsify:/data \
   --rm \
   volume-updater \
-  bash -c 'cp -r /web/build/* /data/.'
+  ash -c 'cp -r /web/build /data'
