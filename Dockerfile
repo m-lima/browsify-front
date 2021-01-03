@@ -12,5 +12,5 @@ COPY . /web
 RUN npm run build
 
 # Pack
-FROM alpine
+FROM node
 COPY --from=web /web/build /web/build
